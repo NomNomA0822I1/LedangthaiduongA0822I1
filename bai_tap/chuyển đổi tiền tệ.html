@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+amount <input type="text"  id="amount">
+<button type="button" onclick="convert()">convert</button>
+<select id="tien1">
+    <option value="USD">USD</option>
+    <option value="VND">VND</option>
+</select>
+<select id="tien2">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<p id="result">result:</p>
+
+<script> function convert() {
+    let amount = document.getElementById("amount").value;
+    let tien1 = document.getElementById("tien1").value;
+    let tien2 = document.getElementById("tien2").value;
+    if (tien1 == "VND" && tien2 == "USD") {
+        document.getElementById("result").innerText =   amount/23000;
+    }
+    if (tien1 == "USD" && tien2 == "VND") {
+        document.getElementById("result").innerText = amount*23000;
+    }
+}
+</script>
+
+</body>
+</html>

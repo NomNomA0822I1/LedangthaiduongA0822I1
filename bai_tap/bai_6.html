@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let gia = +prompt("nhập giá trị của hóa đơn");
+    let phan_tram_hoa_hong;
+    let tien_hoa_hong;
+    if ("gia > 500000") phan_tram_hoa_hong = 9/100;
+    if ("gia > 100000") phan_tram_hoa_hong = 5/100;
+    else phan_tram_hoa_hong = 2/100;
+    tien_hoa_hong = phan_tram_hoa_hong*gia;
+    alert("tiền hoa hồng là "+ tien_hoa_hong);
+</script>
+</body>
+</html>

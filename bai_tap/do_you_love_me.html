@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="result"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="tinh(this.value)" value="1"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="2"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="3"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="+"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="tinh(this.value)" value="4"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="5"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="6"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="-"></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="tinh(this.value)" value="7"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="8"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="9"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="*"></td>
+    </tr>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="tinh(this.value)" value="0"></td>
+        <td><input type="button" onclick="tinh(this.value)" value="/"></td>
+        <td><input type="button" onclick="ket_qua()" value="="></td>
+        <td><input type="button" onclick="tinh(this.value)" value="."></td>
+    </tr>
+
+
+</table>
+<script>
+
+    function tinh(toan) {
+        document.getElementById("result").value += toan
+
+    }
+
+    function ket_qua() {
+        let string = document.getElementById("result").value;
+        document.getElementById("result").value = eval(string);
+
+    }
+</script>
+</body>
+</html>

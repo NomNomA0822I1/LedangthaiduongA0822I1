@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập số a");
+    let b = +prompt("nhập số b");
+    let c = +prompt("nhập số c");
+    let delta = (b**2) - (4*a*c);
+    if (delta < 0 ) alert("phương trình vô nghiệm");
+    else if (delta == 0 ) alert("phương trình có nghiệm kép x1,x2= "+ -b/2*a) ;
+    else alert("phương trình có 2 nghiệm phân biệt x1= "+(-b+math.sqrt(delta))/2*a+"x2= "+(-b-math.sqrt(delta))/2*a)
+</script>
+</body>
+</html>

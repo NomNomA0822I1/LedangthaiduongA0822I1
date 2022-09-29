@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let i = 1;
+    let j = 0;
+    while (count < 2) {
+        j = i + j;
+        i = i + j;
+        if (i % 5 == 0) document.write("số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + i);
+        if (j % 5 == 0) document.write("số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + j);
+        else count ++
+    }
+
+</script>
+</body>
+</html>
